@@ -1,0 +1,37 @@
+#include <stdio.h>
+#include <math.h>
+int main ()
+{
+
+    int a,b,c ;
+    float D;
+    float X1,X2 ;
+    printf("Program Mencari Akar Persamaan Kuadrat\n");
+    printf("Bentuk Persamaan ax^2 + bx + c = 0\n");
+    printf("Nama : Awang adi saputro\n");
+    printf("NIM  : D400150140\n");
+    printf("------------------------\n");
+    a=1;
+    b=6;
+    c=9;
+
+    if(a==0){
+            printf("nilai variable a tidak boleh nol.....!\n");
+    return 0;
+    }else{
+
+    D=(b*b)-(4*a*c);
+    if (D<0){
+            printf("nilai diterminan tidak boleh negatif\n");
+        return 0;
+    }else{
+        X1= (-b+sqrt(D))/(2*a);
+        X2= (-b-sqrt(D))/(2*a);
+        printf("variable input a=%d,b=%d,c=%d\n",a,b,c);
+        printf("akar 1,X1=%4.2f\n",X1);
+        printf("akar 2,X2=%4.2f\n",X2);
+        return 0;
+    }
+    }
+    return 0;
+}
